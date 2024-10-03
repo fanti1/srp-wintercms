@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: 'siapp.payments::lang.models.payment.label'
+
+# Model Form Field configuration
+form: $/siapp/payments/models/payment/fields.yaml
+
+# Model Class name
+modelClass: Siapp\Payments\Models\Payment
+
+# Default redirect location
+defaultRedirect: siapp/payments/payments
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: siapp/payments/payments/update/:id
+    redirectClose: siapp/payments/payments
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: siapp/payments/payments
+    redirectClose: siapp/payments/payments
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title
